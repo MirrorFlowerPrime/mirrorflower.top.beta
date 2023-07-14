@@ -1,0 +1,49 @@
+/* 图片模块 */
+.Index-Imges-Frame-Pc {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+}
+
+/* 底色 */
+.Index-Imges-round-Pc {
+    position: absolute;
+    width: 38.6rem;
+    height: 38.6rem;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+/* 人物图片的超链接 */
+.Index-Imges-Person-A-Pc {
+    position: absolute;
+}
+
+/* 人物 */
+.Index-Imges-Person-Pc {
+    position: relative;
+    height: 46.6rem;
+    margin-top: -25%;
+    margin-left: -3.6%;
+    z-index: 2;
+}
+
+/* 小圆圈的框架 */
+.Index-Imges-Circle-Frame-Pc {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* 小圆圈 */
+.Index-Imges-Circle-All-Pc {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    margin-right: 76%;
+    margin-top: 1%;
+    bottom: 80%;
+}
+

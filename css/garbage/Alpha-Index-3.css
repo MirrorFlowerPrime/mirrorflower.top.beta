@@ -1,0 +1,728 @@
+/* body边距设置为0 */
+body {
+  margin: 0%;
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+}
+
+/* /////////////////首页///////////////// */
+/* 首页整体框架 */
+.Index-Frame-Alpha {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #f3f7ff;
+}
+
+/* 容器大小 */
+.Index-Container-All {
+  width: 50%;
+  height: 100%;
+}
+
+/* //////////上////////// */
+.Index-Container-Content-Above {
+  width: 100%;
+  height: 25%;
+  z-index: 3;
+}
+
+/* 按钮框架 */
+.Index-Above-Frame {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* 按钮容器大小 */
+.Index-Button-Frame {
+  width: 90px;
+  height: 90px;
+  margin-right: 3%;
+}
+
+/* 按钮大小 */
+.Index-Button-All {
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+}
+
+/* 暗蓝色底色 */
+.Index-Button-Blue {
+  position: absolute;
+  background-color: #0c101d;
+  z-index: 2;
+}
+
+/* 暗红色底色 */
+.Index-Button-Red {
+  position: absolute;
+  background-color: #b73625;
+  margin-left: 1.3%;
+}
+
+/* 线的容器 */
+.Index-Button-Line-Container {
+  width: 65px;
+  height: 40px;
+  cursor: pointer;
+}
+
+/* 线 */
+.Index-Button-Line {
+  width: 35px;
+  height: 5px;
+  background-color: #f3f7ff;
+  border-radius: 50px;
+}
+
+/* 上-线 */
+.Index-Line-Left {
+  transition: 0.5s;
+}
+
+/* 中-线 */
+.Index-Line-Middle {
+  transition: 0.5s;
+}
+
+/* 下-线 */
+.Index-Line-Right {
+  transition: 0.5s;
+}
+
+/* 激活改变 */
+.toggle-beta-3 .Index-Line-Left {
+  transform-origin: left;
+  transform: rotate(44deg);
+  margin-left: 10px;
+  transition: 0.5s;
+}
+
+/* 激活改变 */
+.toggle-beta-3 .Index-Line-Middle {
+  width: 0px;
+  transition: 0.5s;
+}
+
+/* 激活改变 */
+.toggle-beta-3 .Index-Line-Right {
+  transform-origin: left;
+  transform: rotate(-44deg);
+  margin-left: 10px;
+  transition: 0.5s;
+}
+
+/* //////////上////////// */
+
+/* //////////中////////// */
+.Index-Container-Content-Middle {
+  width: 100%;
+  height: 100%;
+}
+
+.MirrorFlower-Gif {
+  position: absolute;
+  height: 35%;
+  transition: 0.5s;
+}
+
+/* //////////中////////// */
+
+/* //////////下////////// */
+.Index-Container-Content-Under {
+  width: 100%;
+  height: 25%;
+}
+
+.Index-Beian-Frame {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 4;
+  user-select: text;
+}
+
+.Beta-3-about-Js .Index-Beian-Frame {
+  z-index: -1;
+}
+
+.Index-Beian-Font {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #0c101d;
+  font-weight: 900;
+  transition: 0.5s;
+}
+/* //////////下////////// */
+
+/* 底色大小 */
+.Index-Container-Background-All {
+  width: 100%;
+  height: 100%;
+}
+
+/* 暗蓝色 */
+.Index-Container-Background-Blue {
+  position: absolute;
+  background-color: #0c101d;
+  left: 63%;
+  z-index: 2;
+  transition: 0.4s;
+}
+
+/* 暗红色 */
+.Index-Container-Background-Red {
+  position: absolute;
+  background-color: #b73625;
+  left: 61.5%;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+/* 人物 */
+.Index-Person-All {
+  position: absolute;
+  height: 100%;
+}
+
+/* 原图 */
+.Index-Person-Original {
+  z-index: 3;
+  margin-left: 1.4%;
+  transition: 0.4s;
+}
+
+/* 底色图 */
+.Index-Person-Background {
+  z-index: 2;
+  transition: 0.5s;
+}
+
+/* /////////////////首页///////////////// */
+
+/* /////////////////菜单栏///////////////// */
+.toggle-beta-3 .Index-Container-Background-Blue {
+  left: -60%;
+  transition: 0.4s;
+}
+.toggle-beta-3 .Index-Container-Background-Red {
+  left: -58.5%;
+  transition: 0.5s;
+}
+
+.toggle-beta-3 .Index-Person-Original {
+  margin-left: 100%;
+  transition: 0.4s;
+}
+
+.toggle-beta-3 .Index-Person-Background {
+  margin-left: 100%;
+  transition: 0.5s;
+}
+
+.toggle-beta-3 .MirrorFlower-Gif {
+  margin-left: -100%;
+  transition: 0.5s;
+}
+
+.toggle-beta-3 .Index-Beian-Font {
+  color: #f3f7ff;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+/* 菜单栏整体框架 */
+.toggle-Frame-Alpha {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+}
+
+/* 人物图片 */
+.toggle-Person-All {
+  position: absolute;
+  height: 100%;
+}
+
+/* 原图 */
+.toggle-Person-Original {
+  z-index: 3;
+  margin-left: -100%;
+  transition: 0.4s;
+}
+
+.toggle-beta-3 .toggle-Person-Original {
+  margin-left: 1.4%;
+  transition: 0.4s;
+}
+
+/* 底色 */
+.toggle-Person-Background {
+  z-index: 2;
+  transition: 0.5s;
+  margin-left: -100%;
+}
+
+.toggle-beta-3 .toggle-Person-Background {
+  margin-left: 0%;
+  transition: 0.5s;
+}
+
+/* 按钮1 */
+.button-1-Alpha {
+  transition: 0.4s;
+  margin-top: -200%;
+}
+
+.toggle-beta-3 .button-1-Alpha {
+  transition: 0.4s;
+  margin-top: 0%;
+}
+
+/* 按钮2 */
+.button-2-Alpha {
+  transition: 0.5s;
+  margin-top: -200%;
+}
+
+.toggle-beta-3 .button-2-Alpha {
+  transition: 0.5s;
+  margin-top: 0%;
+}
+
+/* 按钮3 */
+.button-3-Alpha {
+  transition: 0.6s;
+  margin-top: -200%;
+}
+
+.toggle-beta-3 .button-3-Alpha {
+  transition: 0.6s;
+  margin-top: 0%;
+}
+
+/* 按钮4 */
+.button-4-Alpha {
+  transition: 0.7s;
+  margin-top: -200%;
+}
+
+.toggle-beta-3 .button-4-Alpha {
+  transition: 0.7s;
+  margin-top: 0%;
+}
+
+/* 按钮5 */
+.button-5-Alpha {
+  transition: 0.8s;
+  margin-top: -200%;
+}
+
+.toggle-beta-3 .button-5-Alpha {
+  transition: 0.8s;
+  margin-top: 0%;
+}
+/* /////////////////菜单栏///////////////// */
+
+/* /////////////////个人介绍///////////////// */
+.Beta-3-Personal-Js .toggle-Person-Original {
+  z-index: 3;
+  margin-left: -100%;
+  transition: 0.5s;
+}
+
+.Beta-3-Personal-Js .toggle-Person-Background {
+  z-index: 2;
+  transition: 0.9s;
+  margin-left: -100%;
+}
+
+.Display-iconfont-none {
+  display: none;
+}
+
+.Beta-3-Personal-Js .Display-iconfont-none {
+  display: block;
+}
+
+.Beta-3-Personal-Js .Display-none {
+  display: none;
+}
+
+.Beta-3-Personal-Js .Index-Container-Background-Blue {
+  left: -72%;
+  transition: 0.4s;
+}
+
+.Beta-3-Personal-Js .Index-Container-Background-Red {
+  left: -70.5%;
+  transition: 0.5s;
+}
+
+.Beta-3-Personal-Js .button-1-Alpha {
+  transition: 0.4s;
+  margin-top: 200%;
+}
+
+.Beta-3-Personal-Js .button-2-Alpha {
+  transition: 0.4s;
+  margin-top: 200%;
+}
+
+.Beta-3-Personal-Js .button-3-Alpha {
+  transition: 0.4s;
+  margin-top: 200%;
+}
+
+.Beta-3-Personal-Js .button-4-Alpha {
+  transition: 0.4s;
+  margin-top: 200%;
+}
+
+.Beta-3-Personal-Js .button-5-Alpha {
+  transition: 0.4s;
+  margin-top: 200%;
+}
+
+/* 个人介绍整体 */
+.Personal-Frame-Alpha {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+
+.Beta-3-Personal-Js .Personal-Frame-Alpha {
+  z-index: 2;
+}
+
+/* 个人介绍的容器 */
+.Personal-Container-1 {
+  width: 35%;
+  height: 100%;
+}
+
+.Personal-Container-2 {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 人物 */
+.Personal-Person-Original {
+  position: absolute;
+  height: 100%;
+  margin-left: -100%;
+  transition: 0.4s;
+  z-index: 3;
+}
+
+.Beta-3-Personal-Js .Personal-Person-Original {
+  margin-left: 10%;
+  transition: 0.4s;
+}
+
+/* 底色 */
+.Personal-Person-Background {
+  position: absolute;
+  height: 100%;
+  margin-left: -100%;
+  transition: 0.6s;
+  z-index: 2;
+}
+
+.Beta-3-Personal-Js .Personal-Person-Background {
+  margin-left: 8.8%;
+  transition: 0.6s;
+}
+
+/* 上下排版 */
+.Personal-Content-All {
+  width: 100%;
+  height: 80%;
+}
+
+/* 内部排版 */
+.Personal-Content-interior-All {
+  width: 80%;
+  height: 100%;
+}
+
+/* 左 */
+.Personal-interior-1 {
+  width: 50%;
+  height: 80%;
+}
+
+/* 右 */
+.Personal-interior-2 {
+  width: 40%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* 文字1 */
+.Personal-interior-font-1 {
+  font-size: 2rem;
+  line-height: 60px;
+  margin-bottom: 24px;
+  font-weight: bold;
+  margin-left: -1000%;
+  transition: 0.8s;
+}
+
+.Beta-3-Personal-Js .Personal-interior-font-1 {
+  margin-left: 0%;
+  transition: 0.8s;
+}
+
+/* 文字2 */
+.Personal-interior-font-2 {
+  font-size: 1.3rem;
+  margin-bottom: 24px;
+  margin-left: -1000%;
+  transition: 0.9s;
+  /* font-weight: bold; */
+}
+
+.Beta-3-Personal-Js .Personal-interior-font-2 {
+  margin-left: 0%;
+  transition: 0.9s;
+}
+
+/* 文字3 */
+.Personal-interior-font-3 {
+  font-size: 1rem;
+  margin-left: -1000%;
+  transition: 1s;
+  margin-bottom: 34px;
+}
+
+.Beta-3-Personal-Js .Personal-interior-font-3 {
+  margin-left: 0%;
+  transition: 1s;
+}
+
+/* 按钮 */
+.Personal-interior-button {
+  width: 120px;
+  height: 60px;
+  background-color: #0c101d;
+  border-radius: 100px;
+  color: #f3f7ff;
+  transition: 0.3s;
+  margin-left: -1000%;
+  transition: 1.1s;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.Beta-3-Personal-Js .Personal-interior-button {
+  margin-left: 0%;
+  transition: 1.1s;
+}
+.Beta-3-Personal-Js .Personal-interior-button {
+  margin-left: 0%;
+  transition: 1.1s;
+}
+
+.Personal-interior-button:hover {
+  background-color: #b73625;
+  transition: 0.3s;
+}
+
+/* Svg图片设置 */
+.Personal-interior-Svg-1 {
+  margin-left: 500%;
+  transition: 1s;
+}
+
+.Beta-3-Personal-Js .Personal-interior-Svg-1 {
+  margin-left: 0%;
+  transition: 1s;
+}
+
+#svg_8 {
+  transition: 0.6s;
+  animation: Svg-8 7s ease infinite;
+}
+
+#svg_6 {
+  transition: 0.6s;
+  animation: Svg-6 7s ease infinite;
+}
+
+.Personal-interior-Svg-1 #svg_8:hover {
+  fill: #b73625;
+  transition: 0.6s;
+}
+
+.Personal-interior-Svg-1 #svg_6:hover {
+  fill: #0c101d;
+  transition: 0.6s;
+}
+
+/* 动画效果 */
+@keyframes Svg-8 {
+  0%,
+  100% {
+    fill: #b73625;
+  }
+
+  50% {
+    fill: #0c101d;
+  }
+}
+
+/* 动画效果 */
+@keyframes Svg-6 {
+  0%,
+  100% {
+    fill: #0c101d;
+  }
+
+  50% {
+    fill: #b73625;
+  }
+}
+/* 模块二 */
+.Personal-interior-3 {
+  width: 40%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.Personal-interior-4 {
+  width: 60%;
+  height: 100%;
+}
+
+.Personal-interior-Container-1 {
+  width: 80%;
+  height: 80%;
+}
+
+.personal-info-font-1-PC {
+  margin-left: 500%;
+  transition: 0.6s;
+}
+
+.personal-info-font-2-PC {
+  margin-left: 500%;
+  transition: 0.8s;
+}
+
+.personal-info-font-3-PC {
+  margin-left: 500%;
+  transition: 1s;
+}
+
+.Beta-3-Personal-Js .personal-info-font-1-PC {
+  margin-left: 0%;
+  transition: 0.6s;
+}
+
+.Beta-3-Personal-Js .personal-info-font-2-PC {
+  margin-left: 0%;
+  transition: 0.8s;
+}
+
+.Beta-3-Personal-Js .personal-info-font-3-PC {
+  margin-left: 0%;
+  transition: 1s;
+}
+
+.personal-interior-Img-1 {
+  position: absolute;
+  height: 50%;
+  z-index: 2;
+  margin-left: -300%;
+  transition: 0.8s;
+}
+
+.Beta-3-Personal-Js .personal-interior-Img-1 {
+  margin-left: 2%;
+  transition: 0.8s;
+}
+
+.personal-interior-Img-2 {
+  position: absolute;
+  height: 50%;
+  z-index: 1;
+  margin-left: -300%;
+  transition: 0.9s;
+}
+
+.Beta-3-Personal-Js .personal-interior-Img-2 {
+  margin-left: 0%;
+  transition: 0.9s;
+}
+
+/* /////////////////个人介绍///////////////// */
+
+/* /////////////////关于///////////////// */
+
+.Beta-3-about-Js .toggle-Person-Original {
+  z-index: 3;
+  margin-left: -100%;
+  transition: 0.5s;
+}
+
+.Beta-3-about-Js .toggle-Person-Background {
+  z-index: 2;
+  transition: 0.9s;
+  margin-left: -100%;
+}
+
+.Display-iconfont-none {
+  display: none;
+}
+
+.Beta-3-about-Js .Display-iconfont-none {
+  display: block;
+}
+
+.Beta-3-about-Js .Display-none {
+  display: none;
+}
+
+.Beta-3-about-Js .Index-Container-Background-Blue {
+  left: 65%;
+  transition: 0.4s;
+}
+
+.Beta-3-about-Js .Index-Container-Background-Red {
+  left: 63.8%;
+  transition: 0.5s;
+}
+
+.Beta-3-about-Js .button-1-Alpha {
+  transition: 0.4s;
+  margin-top: 200%;
+}
+
+.Beta-3-about-Js .button-2-Alpha {
+  transition: 0.4s;
+  margin-top: 200%;
+}
+
+.Beta-3-about-Js .button-3-Alpha {
+  transition: 0.4s;
+  margin-top: 200%;
+}
+
+.Beta-3-about-Js .button-4-Alpha {
+  transition: 0.4s;
+  margin-top: 200%;
+}
+
+.Beta-3-about-Js .button-5-Alpha {
+  transition: 0.4s;
+  margin-top: 200%;
+}

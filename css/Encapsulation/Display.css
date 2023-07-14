@@ -1,0 +1,107 @@
+/* /////////////////封装的display样式///////////////// */
+
+/* 压力布局 */
+.Display {
+  display: flex;
+}
+
+/* 居中 */
+.Justify-Content-Cener {
+  justify-content: center;
+  align-items: center;
+}
+
+/* 靠左 */
+.Justify-Content-Flex-Start {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* 靠右 */
+.Justify-Content-Flex-End {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* 靠上 */
+.Align-Items-Flex-Start {
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* 靠下 */
+.Align-Items-Flex-End {
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* //////////水平分布////////// */
+
+/* 占满整个容器分布 */
+.Justify-Content-Space-Between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 两边空格分布 */
+.Justify-Content-Space-Around {
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* 两边平分分布 */
+.Justify-Content-Space-Evenly {
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* //////////水平分布////////// */
+
+/* //////////垂直分布////////// */
+
+/* 占满整个容器分布 */
+.Justify-Content-Space-Between-column {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 两边空格分布 */
+.Justify-Content-Space-Around-column {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* 两边平分分布 */
+.Justify-Content-Space-Evenly-column {
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* //////////垂直分布////////// */
+
+/* //////////四角////////// */
+
+/* 左上角 */
+.Justify-content-align-items-flex-start {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+/* 左下角 */
+.Justify-content-align-items-flex-start-end {
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+/* 右上角 */
+.Justify-content-align-items-flex-start-end {
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+/* 右下角 */
+.Justify-content-align-items-flex-end {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+/* //////////四角////////// */
+
+/* /////////////////封装的display样式///////////////// */

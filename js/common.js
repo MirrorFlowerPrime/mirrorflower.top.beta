@@ -14,6 +14,12 @@ menutoggle_deta_3_phone.onclick = function () {
   body.classList.toggle("toggle-beta-3-phone");
 };
 
+// 返回
+function Beta_3_return_Js() {
+  let body = document.querySelector("body");
+  body.setAttribute("class", "toggle-beta-3");
+}
+
 // 个人介绍页面
 function Beta_3_Personal_Js() {
   let body = document.querySelector("body");
@@ -32,7 +38,7 @@ function Beta_3_project_Js() {
   body.setAttribute("class", "toggle-beta-3 Beta-3-project-Js");
 }
 
-// 日志
+// 关于
 function Beta_3_log_Js() {
   let body = document.querySelector("body");
   body.setAttribute("class", "toggle-beta-3 Beta-3-about-Js");

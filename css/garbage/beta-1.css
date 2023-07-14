@@ -1,0 +1,995 @@
+/* .mirror {
+    border: 2px solid #f000f0;
+} */
+
+/* ///////////////PC端与手机端切换/////////////// */
+.PC {
+    display: block;
+}
+
+.phone {
+    display: none;
+}
+
+/* ///////////////PC端与手机端切换/////////////// */
+
+/* ///////////////主体设置/////////////// */
+.mirrorflowers {
+    overflow: hidden;
+    position: absolute;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    user-select: none;
+}
+
+/* ///////////////主体设置/////////////// */
+
+
+/* ///////////////背景/////////////// */
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ///////////////背景/////////////// */
+
+
+/* ///////////////标题/////////////// */
+/* 默认标题设置 */
+.titles-1 {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+/* 激活后消失 */
+.active1 .titles-1 {
+    display: none;
+}
+
+/* 动态标题设置 */
+.titles-2 {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titles-3 {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 整体标题位置状态设置 */
+.title {
+    width: 40%;
+    position: absolute;
+    object-fit: cover;
+}
+
+/* 动态标题大小设置 */
+.mirrorflower-gif-1 {
+    width: 40%;
+    position: absolute;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    cursor: pointer;
+    right: 100%;
+}
+
+/* 激活后出现 */
+.active1 .mirrorflower-gif-1 {
+    right: 10%;
+    transition: 0.5s;
+}
+
+/* 激活后消失 */
+.toggle-beta-1 .mirrorflower-gif-1 {
+    display: none;
+}
+
+/* ///////////////标题/////////////// */
+
+
+/* ///////////////PC端/////////////// */
+/* 左边人物背景 */
+.left-frame {
+    left: -100%;
+    position: absolute;
+    height: 100%;
+}
+
+/* ///////////////左边红色方框/////////////// */
+/* 红色方框出现速度 */
+.left-frame-red {
+    transition: 0.5s;
+}
+
+/* 按钮激活活出现 */
+.active1 .left-frame-red {
+    left: 0;
+}
+
+/* ///////////////左边红色方框/////////////// */
+
+
+/* ///////////////左边暗绿色方框/////////////// */
+/* 暗绿色方框出现速度 */
+.left-frame-blue {
+    transition: 0.6s;
+}
+
+/* 按钮激活后出现 */
+.active1 .left-frame-blue {
+    left: 0;
+}
+
+/* ///////////////左边暗绿色方框/////////////// */
+
+
+/* ///////////////左边纯色人物/////////////// */
+/* 纯色人物出现速度 */
+.left-frame-figuregreen {
+    transition: 0.8s;
+}
+
+/* 按钮激活后出现 */
+.active1 .left-frame-figuregreen {
+    left: 0;
+}
+
+/* ///////////////左边纯色人物/////////////// */
+
+
+/* ///////////////左边人物/////////////// */
+/* 人物出现速度 */
+.left-frame-figure {
+    transition: 0.7s;
+}
+
+/* 按钮激活后出现 */
+.active1 .left-frame-figure {
+    left: 0;
+}
+
+/* ///////////////左边人物/////////////// */
+
+
+/* ///////////////菜单栏/////////////// */
+/* 背景大小设置 */
+.index-menu-frame {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 红色背景 */
+.index-menu-red {
+    left: -100%;
+    transition: 0.7s;
+}
+
+/* 激活后出现 */
+.toggle-beta-1 .index-menu-red {
+    left: 0%;
+}
+
+/* 蓝色背景 */
+.index-menu-blue {
+    right: -100%;
+    transition: 0.7s;
+}
+
+/* 激活后出现 */
+.toggle-beta-1 .index-menu-blue {
+    right: 0%;
+}
+
+/* 人物和标题大小设置 */
+.index-menu-figure-frame {
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 人物出现速度和初始位置 */
+.index-menu-figure {
+    right: -100%;
+    transition: 1s;
+}
+
+/* 激活后出现 */
+.toggle-beta-1 .index-menu-figure {
+    right: 0%;
+}
+
+/* 白人物出现速度和初始位置 */
+.index-menu-figure-white {
+    right: -150%;
+    transition: 1.3s;
+}
+
+/* 激活后出现 */
+.toggle-beta-1 .index-menu-figure-white {
+    right: 2%;
+}
+
+/* 第一位竖排标题 */
+.img-1 {
+    left: 2%;
+    top: -100%;
+    transition: 1.2s;
+}
+
+/* 激活后出现 */
+.toggle-beta-1 .img-1 {
+    top: -40%;
+}
+
+/* 第一位竖排标题 */
+.img-2 {
+    left: 8%;
+    top: 100%;
+    transition: 1.3s;
+}
+
+/* 激活后出现 */
+.toggle-beta-1 .img-2 {
+    top: 20%;
+}
+
+/* 第一位竖排标题 */
+.img-3 {
+    left: 14%;
+    top: -100%;
+    transition: 1.4s;
+}
+
+/* 激活后出现 */
+.toggle-beta-1 .img-3 {
+    top: -30%;
+}
+
+/* 第一位竖排标题 */
+.img-4 {
+    left: 20%;
+    top: 100%;
+    transition: 1.5s;
+}
+
+/* 激活后出现 */
+.toggle-beta-1 .img-4 {
+    top: 10%;
+}
+
+/* 第一位竖排标题 */
+.img-5 {
+    left: 26%;
+    top: -100%;
+    transition: 1.6s;
+}
+
+/* 激活后出现 */
+.toggle-beta-1 .img-5 {
+    top: -30%;
+}
+
+/* 第一位竖排标题 */
+.img-6 {
+    left: 32%;
+    top: -100%;
+    transition: 1.7s;
+}
+
+/* 激活后出现 */
+.toggle-beta-1 .img-6 {
+    top: -50%;
+}
+
+/* 第一位竖排标题 */
+.img-7 {
+    left: 38%;
+    top: -100%;
+    transition: 1.8s;
+}
+
+/* 激活后出现 */
+.toggle-beta-1 .img-7 {
+    top: -80%;
+}
+
+/* 第一位竖排标题 */
+.img-8 {
+    left: 44%;
+    top: -100%;
+    transition: 1.9s;
+}
+
+/* 激活后出现 */
+.toggle-beta-1 .img-8 {
+    top: -20%;
+}
+
+/* 第一位竖排标题 */
+.img-9 {
+    left: 50%;
+    top: -100%;
+    transition: 2s;
+}
+
+/* 激活后出现 */
+.toggle-beta-1 .img-9 {
+    top: -10%;
+}
+
+/* 红色按钮整体设置 */
+.index-menu-button-frame-1 {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* 蓝色按钮整体设置 */
+.index-menu-button-frame-2 {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 10px;
+}
+
+/* 红色按钮设置 */
+.index-menu-button-1 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: #8e1c0d;
+    z-index: 6;
+}
+
+/* 选中整宽 */
+.index-menu-button-1:hover {
+    transition: 0.5s;
+    width: 150px;
+}
+
+/* 按钮图标设置 */
+.index-menu-button-1 .iconfont {
+    font-size: 2rem;
+    color: #f3f7ff;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+/* 选中变色 */
+.index-menu-button-1 .iconfont:hover {
+    color: #0c101d;
+}
+
+/* 选中图标靠右 */
+.index-menu-button-1:hover .iconfont {
+    margin-right: 35%;
+    transition: 0.5s;
+}
+
+/* 按钮信息初始隐藏 */
+.index-menu-button-1>a:nth-child(2) {
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s;
+    text-align: center;
+}
+
+/* 选中出现按钮信息 */
+.index-menu-button-1:hover>a:nth-child(2) {
+    transform: scaleX(1);
+}
+
+/* 按钮信息设置 */
+.menu-info {
+    font-size: 1.2rem;
+    color: #f3f7ff;
+    margin-left: 4%;
+    text-decoration: none;
+}
+
+/* 选中变色 */
+.menu-info:hover {
+    color: #0c101d;
+}
+
+/* 蓝色按钮设置 */
+.index-menu-button-2 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: #0a0e1b;
+    z-index: 5;
+}
+
+/* 选中增宽 */
+.index-menu-button-2:hover {
+    transition: 0.5s;
+    width: 150px;
+}
+
+/* 按钮压力布局设置 */
+.button-display {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* 一号按钮设置 */
+.button-1-beta-1 {
+    margin-top: -100%;
+    margin-left: 50%;
+    transition: 1s;
+}
+
+/* 激活出现一号按钮 */
+.toggle-beta-1 .button-1-beta-1 {
+    margin-top: 0%;
+    margin-left: 50%;
+}
+
+/* 二号按钮设置 */
+.button-2-beta-1 {
+    margin-top: -100%;
+    margin-left: 45%;
+    transition: 1s;
+}
+
+/* 激活出现二号按钮 */
+.toggle-beta-1 .button-2-beta-1 {
+    margin-top: 0%;
+    margin-left: 45%;
+}
+
+/* 三号按钮设置 */
+.button-3-beta-1 {
+    margin-top: -100%;
+    margin-left: 40%;
+    transition: 1s;
+}
+
+/* 激活出现三号按钮 */
+.toggle-beta-1 .button-3-beta-1 {
+    margin-top: 0%;
+    margin-left: 40%;
+}
+
+/* 四号按钮设置 */
+.button-4-beta-1 {
+    margin-top: -100%;
+    margin-left: 35%;
+    transition: 1s;
+}
+
+/* 激活出现四号按钮 */
+.toggle-beta-1 .button-4-beta-1 {
+    margin-top: 0%;
+    margin-left: 35%;
+}
+
+/* 五号按钮设置 */
+.button-5-beta-1 {
+    margin-top: -100%;
+    margin-left: 30%;
+    transition: 1s;
+}
+
+/* 激活出现五号按钮 */
+.toggle-beta-1 .button-5-beta-1 {
+    margin-top: 0%;
+    margin-left: 30%;
+}
+
+/* 按钮信息初始隐藏 */
+.index-menu-button-2>.Last-Surprise:nth-child(1) {
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s;
+    text-align: center;
+}
+
+/* 选中出现按钮信息 */
+.index-menu-button-2:hover>.Last-Surprise:nth-child(1) {
+    transform: scaleX(1);
+}
+
+/* 彩蛋信息设置sssssssssssssssssss */
+.Last-Surprise {
+    color: #f3f7ff;
+    margin-left: 4%;
+    font-size: 0.8rem;
+}
+
+/* ///////////////菜单栏/////////////// */
+
+/* 备案链接 */
+.font {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    color: #0c101d;
+    z-index: 111;
+}
+
+.footer-info {
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.footer-info a {
+    text-decoration: none;
+}
+
+.footer-info a:hover {
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+
+/* ///////////////PC端与手机端切换/////////////// */
+
+
+/* 手机自适应 */
+@media (max-width: 900px) {
+
+    /* ///////////////手机端切换/////////////// */
+    .PC {
+        display: none;
+    }
+
+    .phone {
+        display: block;
+    }
+
+    /* ///////////////手机端切换/////////////// */
+
+
+    /* ///////////////标题设置/////////////// */
+    /* 标题大小 */
+    .title {
+        width: 60%;
+        position: absolute;
+        object-fit: cover;
+        
+    }
+
+    .mirrorflower-gif-1 {
+        width: 65%;
+    }
+
+    .active1 .mirrorflower-gif-1 {
+        right: auto;
+        z-index: 5;
+    }
+
+    /* 按钮激活后出现 */
+    .active1 .title {
+        right: auto;
+    }
+
+    /* 按钮激活后出现 */
+    .active1 .red {
+        right: 19.5%;
+    }
+
+    /* 按钮激活后出现 */
+    .active1 .green {
+        right: 19.1%;
+    }
+
+    /* 按钮激活后出现 */
+    .toggle-beta-1 .title {
+        right: -100%;
+    }
+
+    /* ///////////////标题设置/////////////// */
+
+    /* 右边方框 */
+    .right-frame-phone {
+        position: absolute;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        object-fit: cover;
+        transition: 0.5s;
+    }
+
+    /* 右下红色半圆 */
+    .right-frame-red-phone {
+        right: -100%;
+    }
+
+    .active1 .right-frame-red-phone {
+        right: 0%;
+        transition: 0.6s;
+    }
+
+    .toggle-beta-1 .right-frame-red-phone {
+        right: -100%;
+    }
+
+    /* 左上红色半圆 */
+    .left-frame-red-phone {
+        left: -100%;
+    }
+
+    .active1 .left-frame-red-phone {
+        left: 0%;
+        transition: 0.6s;
+    }
+
+    .toggle-beta-1 .left-frame-red-phone {
+        left: -100%;
+    }
+
+    /* 右下暗蓝色半圆 */
+    .right-frame-blue-phone {
+        right: -100%;
+    }
+
+    .active1 .right-frame-blue-phone {
+        right: 0%;
+        transition: 0.5s;
+    }
+
+    .toggle-beta-1 .right-frame-blue-phone {
+        right: -100%;
+    }
+
+
+    /* 左上暗蓝色半圆 */
+    .left-frame-blue-phone {
+        left: -100%;
+    }
+
+    .active1 .left-frame-blue-phone {
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    .toggle-beta-1 .left-frame-blue-phone {
+        left: -100%;
+    }
+
+    /* 人物 */
+    .right-figure-phone {
+        position: absolute;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* 右下纯色人物 */
+    .right-frame-figuregreen-phone {
+        right: -100%;
+    }
+
+    .active1 .right-frame-figuregreen-phone {
+        right: 0%;
+        transition: 0.6s;
+    }
+
+    .toggle-beta-1 .right-frame-figuregreen-phone {
+        right: -100%;
+    }
+
+    /* 左上纯色人物 */
+    .left-frame-figuregreen-phone {
+        left: -100%;
+    }
+
+    .toggle-beta-1 .left-frame-figuregreen-phone {
+        left: -100%;
+    }
+
+    .active1 .left-frame-figuregreen-phone {
+        left: 0%;
+        transition: 0.6s;
+    }
+
+    .toggle-beta-1 .left-frame-figuregreen-phone {
+        left: -100%;
+    }
+
+    /* 右下人物 */
+    .right-frame-figure-phone {
+        right: -100%;
+    }
+
+    .active1 .right-frame-figure-phone {
+        right: 0%;
+        transition: 0.5s;
+    }
+
+    .toggle-beta-1 .right-frame-figure-phone {
+        right: -100%;
+    }
+
+    /* 左上人物 */
+    .left-frame-figure-phone {
+        left: -100%;
+    }
+
+    .active1 .left-frame-figure-phone {
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    .toggle-beta-1 .left-frame-figure-phone {
+        left: -100%;
+    }
+
+    /* ///////////////菜单栏/////////////// */
+
+    .Menu-frame-phone {
+        position: absolute;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        object-fit: cover;
+        transition: 0.5s;
+    }
+
+    .Menu-right-frame-red-phone {
+        right: -100%;
+    }
+
+    .toggle-beta-1 .Menu-right-frame-red-phone {
+        right: 0%;
+        transition: 0.6s;
+    }
+
+    /* 左上红色半圆 */
+    .Menu-left-frame-red-phone {
+        left: -100%;
+    }
+
+    .toggle-beta-1 .Menu-left-frame-red-phone {
+        left: 0%;
+        transition: 0.6s;
+    }
+
+    /* 右下暗蓝色半圆 */
+    .Menu-right-frame-blue-phone {
+        right: -100%;
+    }
+
+    .toggle-beta-1 .Menu-right-frame-blue-phone {
+        right: 0%;
+        transition: 0.5s;
+    }
+
+    /* 左上暗蓝色半圆 */
+    .Menu-left-frame-blue-phone {
+        left: -100%;
+    }
+
+    .toggle-beta-1 .Menu-left-frame-blue-phone {
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    /* 人物 */
+    .Menu-right-figure-phone {
+        position: absolute;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* 右下纯色人物 */
+    .Menu-right-frame-figuregreen-phone {
+        right: -100%;
+    }
+
+    .toggle-beta-1 .Menu-right-frame-figuregreen-phone {
+        right: 0%;
+        transition: 0.6s;
+    }
+
+    /* 左上纯色人物 */
+    .Menu-left-frame-figuregreen-phone {
+        left: -100%;
+    }
+
+    .toggle-beta-1 .Menu-left-frame-figuregreen-phone {
+        left: 0%;
+        transition: 0.6s;
+    }
+
+    /* 右下人物 */
+    .Menu-right-frame-figure-phone {
+        right: -100%;
+    }
+
+    .toggle-beta-1 .Menu-right-frame-figure-phone {
+        right: 0%;
+        transition: 0.5s;
+    }
+
+    /* 左上人物 */
+    .Menu-left-frame-figure-phone {
+        left: -100%;
+    }
+
+    .toggle-beta-1 .Menu-left-frame-figure-phone {
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    /* 左边按钮压力布局 */
+    .menu-frame-phone-1 {
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        z-index: 3;
+    }
+
+    /* 按钮整体大小设置 */
+    .menu-frame {
+        width: 115px;
+        height: 45px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    /* 文字设置 */
+    .menu-font {
+        font-size: 1rem;
+        color: #f3f7ff;
+        text-decoration: none;
+    }
+
+    /* 图标设置 */
+    .menu-iconfont {
+        font-size: 1.3rem;
+        color: #f3f7ff;
+        text-decoration: none;
+    }
+
+    /* 红色底色 */
+    .menu-red {
+        margin-top: 10px;
+        background-color: #b73625;
+    }
+
+    /* 蓝色底色 */
+    .menu-blue {
+        position: absolute;
+        background-color: #0c101d;
+    }
+
+    /* 左边1号按钮 */
+    .menu-1 {
+        position: relative;
+        left: -100%;
+    }
+
+    /* 激活后出现 */
+    .toggle-beta-1 .menu-1 {
+        left: 5%;
+        transition: 0.5s;
+    }
+
+    /* 左边2号按钮 */
+    .menu-2 {
+        position: relative;
+        left: -100%;
+    }
+
+    /* 激活后出现 */
+    .toggle-beta-1 .menu-2 {
+        left: 2%;
+        transition: 0.6s;
+    }
+
+    /* 左边3号按钮 */
+    .menu-3 {
+        position: relative;
+        left: -100%;
+    }
+
+    /* 激活后出现 */
+    .toggle-beta-1 .menu-3 {
+        left: 5%;
+        transition: 0.7s;
+    }
+
+    /* 右边按钮压力布局 */
+    .menu-frame-phone-2 {
+        top: 45%;
+        position: absolute;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: flex-end;
+        z-index: 3;
+    }
+
+    /* 右边1号按钮 */
+    .menu-right-1 {
+        position: relative;
+        right: -100%;
+    }
+
+    /* 激活后出现 */
+    .toggle-beta-1 .menu-right-1 {
+        right: 5%;
+        transition: 0.8s;
+    }
+
+    /* 右边2号按钮 */
+    .menu-right-2 {
+        position: relative;
+        right: -100%;
+    }
+
+    /* 激活后出现 */
+    .toggle-beta-1 .menu-right-2 {
+        right: 2%;
+        transition: 0.9s;
+    }
+
+    /* ///////////////菜单栏/////////////// */
+
+    /* 备案号设置 */
+    .footer-info-phone {
+        position: absolute;
+        bottom: 5%;
+        right: 10%;
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+
+    .font-phone {
+        font-size: 0.5rem;
+        writing-mode: vertical-lr;
+        position: relative;
+        color: #0c101d;
+        z-index: 11111;
+        text-decoration: none;
+    }
+
+    .active1 .font-phone {
+        color: #f3f7ff;
+    }
+
+    .toggle-beta-1 .font-phone {
+        color: #0c101d;
+    }
+}
